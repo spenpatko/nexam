@@ -1207,7 +1207,7 @@ Kembalikan HANYA JSON array valid tanpa markdown dengan struktur:
                       isSiswa ? 'bg-white text-[#3B5BFD] shadow-sm' : 'text-slate-500 hover:text-slate-800'
                     }"
                   >
-                    Masuk Peserta (Siswa)
+                    Siswa
                   </button>
                   <button
                     type="button"
@@ -1216,18 +1216,18 @@ Kembalikan HANYA JSON array valid tanpa markdown dengan struktur:
                       !isSiswa ? 'bg-white text-[#3B5BFD] shadow-sm' : 'text-slate-500 hover:text-slate-800'
                     }"
                   >
-                    Masuk Guru / Admin
+                    MGuru / Admin
                   </button>
                 </div>
 
                 ${isSiswa ? `
                   <form onsubmit="window.handleSiswaLogin(event)" class="space-y-4">
                     <div>
-                      <label class="block text-xs font-bold text-slate-700 mb-1.5">NISN / Username Siswa</label>
+                      <label class="block text-xs font-bold text-slate-700 mb-1.5">Username</label>
                       <input
                         id="login-siswa-nisn"
                         type="text"
-                        placeholder="Masukkan NISN Anda"
+                        placeholder="Contoh : 2056745"
                         required
                         class="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-slate-50/60 focus:bg-white focus:border-[#3B5BFD] focus:outline-none text-sm font-medium"
                       />
@@ -1237,7 +1237,7 @@ Kembalikan HANYA JSON array valid tanpa markdown dengan struktur:
                       <input
                         id="login-siswa-pass"
                         type="password"
-                        placeholder="Masukkan Password"
+                        placeholder="••••••••"
                         required
                         class="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-slate-50/60 focus:bg-white focus:border-[#3B5BFD] focus:outline-none text-sm font-medium"
                       />
@@ -1249,7 +1249,7 @@ Kembalikan HANYA JSON array valid tanpa markdown dengan struktur:
                 ` : `
                   <form onsubmit="window.handleAdminLogin(event)" class="space-y-4">
                     <div>
-                      <label class="block text-xs font-bold text-slate-700 mb-1.5">Email Guru / Admin Sekolah</label>
+                      <label class="block text-xs font-bold text-slate-700 mb-1.5">Username</label>
                       <input
                         id="login-admin-email"
                         type="email"
@@ -1295,7 +1295,7 @@ Kembalikan HANYA JSON array valid tanpa markdown dengan struktur:
             <div class="md:col-span-5 spotlight-sky p-8 text-white flex flex-col justify-between relative overflow-hidden min-h-[260px]">
               <div class="relative z-10">
                 <span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-[11px] font-bold uppercase tracking-wider mb-3">
-                  Platform Evaluasi SMP
+                  Platform Asesmen Online
                 </span>
                 <h2 class="text-2xl font-extrabold leading-snug mb-2">
                   Ujian Jujur, Cerdas & Tanpa Kertas
